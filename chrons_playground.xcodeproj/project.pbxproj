@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		9C1466EB23295A5C006EBDD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1466EA23295A5C006EBDD9 /* AppDelegate.swift */; };
-		9C1466ED23295A5C006EBDD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1466EC23295A5C006EBDD9 /* ViewController.swift */; };
+		9C1466ED23295A5C006EBDD9 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1466EC23295A5C006EBDD9 /* ContainerViewController.swift */; };
 		9C1466F023295A5C006EBDD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1466EE23295A5C006EBDD9 /* Main.storyboard */; };
 		9C1466F223295A5E006EBDD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1466F123295A5E006EBDD9 /* Assets.xcassets */; };
 		9C1466F523295A5F006EBDD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1466F323295A5F006EBDD9 /* LaunchScreen.storyboard */; };
+		9CAB98522329985E00DEF95F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAB98512329985E00DEF95F /* OnboardingViewController.swift */; };
+		9CAB98562329A2C200DEF95F /* OnboardingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAB98552329A2C200DEF95F /* OnboardingDataSource.swift */; };
+		9CAB98592329A41900DEF95F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAB98582329A41900DEF95F /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C1466E723295A5C006EBDD9 /* chrons_playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chrons_playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1466EA23295A5C006EBDD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C1466EC23295A5C006EBDD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C1466EC23295A5C006EBDD9 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		9C1466EF23295A5C006EBDD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C1466F123295A5E006EBDD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C1466F423295A5F006EBDD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C1466F623295A5F006EBDD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CAB98512329985E00DEF95F /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = ../../../../../System/Volumes/Data/Users/agabankuuhe/Developer/chrons_playground/chrons_playground/OnboardingViewController.swift; sourceTree = "<group>"; };
+		9CAB98552329A2C200DEF95F /* OnboardingDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingDataSource.swift; path = ../../../../../../System/Volumes/Data/Users/agabankuuhe/Developer/chrons_playground/chrons_playground/Onboarding/OnboardingDataSource.swift; sourceTree = "<group>"; };
+		9CAB98582329A41900DEF95F /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = ../../../../../../System/Volumes/Data/Users/agabankuuhe/Developer/chrons_playground/chrons_playground/OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,32 @@
 			isa = PBXGroup;
 			children = (
 				9C1466EA23295A5C006EBDD9 /* AppDelegate.swift */,
-				9C1466EC23295A5C006EBDD9 /* ViewController.swift */,
+				9CAB98572329A2DA00DEF95F /* Container (Home Page) */,
+				9CAB98532329986400DEF95F /* Onboarding */,
+				9CAB98512329985E00DEF95F /* OnboardingViewController.swift */,
 				9C1466EE23295A5C006EBDD9 /* Main.storyboard */,
 				9C1466F123295A5E006EBDD9 /* Assets.xcassets */,
 				9C1466F323295A5F006EBDD9 /* LaunchScreen.storyboard */,
 				9C1466F623295A5F006EBDD9 /* Info.plist */,
 			);
 			path = chrons_playground;
+			sourceTree = "<group>";
+		};
+		9CAB98532329986400DEF95F /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				9CAB98582329A41900DEF95F /* OnboardingViewController.swift */,
+				9CAB98552329A2C200DEF95F /* OnboardingDataSource.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		9CAB98572329A2DA00DEF95F /* Container (Home Page) */ = {
+			isa = PBXGroup;
+			children = (
+				9C1466EC23295A5C006EBDD9 /* ContainerViewController.swift */,
+			);
+			path = "Container (Home Page)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C1466ED23295A5C006EBDD9 /* ViewController.swift in Sources */,
+				9C1466ED23295A5C006EBDD9 /* ContainerViewController.swift in Sources */,
+				9CAB98522329985E00DEF95F /* OnboardingViewController.swift in Sources */,
+				9CAB98592329A41900DEF95F /* OnboardingViewController.swift in Sources */,
 				9C1466EB23295A5C006EBDD9 /* AppDelegate.swift in Sources */,
+				9CAB98562329A2C200DEF95F /* OnboardingDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
